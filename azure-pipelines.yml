@@ -4,13 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 # environment: 'testi'
 
-environment: Testi
 trigger:
 - master
 
 pool:
   vmImage: 'ubuntu-latest'
-
+environment: Testi
 variables:
   buildConfiguration: 'Release'
 
